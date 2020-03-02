@@ -1,0 +1,14 @@
+﻿@model WebBoard.Models.BoardTitle;
+@{
+    ViewData["Title"] = "Board";
+}
+@{ 
+<h1>@ViewData["Title"]</h1>
+<form id="frm" method="post" action="/Home/BoardPost/" >
+<label>姓名:</label><input type="text" name="Name" ><br/>
+<label>主題:</label><input type="text" name="Subject" ><br/>
+<textarea name="Memo" rows="20" cols="50"></textarea><br/>
+<button type="submit" value="傳送">新增</button>
+
+</form>
+}
